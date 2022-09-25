@@ -1,0 +1,347 @@
+/* public */
+div {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #000;
+	position: absolute;
+}
+
+.shadow {
+	box-shadow: -2px 2px 4px #ccc;
+}
+
+.doraemon {
+	width: 200px;
+	height: 300px;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 0;
+}
+/* 头部 */
+.head {
+	background: linear-gradient(45deg, #18c, #18c 10%, #1ce 70%, #fff);
+	width: 140px;
+	height: 120px;
+	margin: auto;
+	border-radius: 50% 50% 30% 30% / 50% 50% 50% 50%;
+	right: 0;
+	left: 0;
+}
+/* 眼睛 */
+.eye {
+	background: #fff;
+	width: 30px;
+	height: 35px;
+	border-radius: 40%;
+	top: 16px;
+	z-index: 1;
+}
+
+.eye-1 {
+	left: 38px;
+}
+
+.eye-2 {
+	right: 38px;
+}
+/* 眼珠 */
+.pupil {
+	background: #000;
+	width: 8px;
+	height: 8px;
+	border: 0;
+	border-radius: 50%;
+	bottom: 6px;
+}
+
+.pupil-1 {
+	right: 6px;
+}
+
+.pupil-2 {
+	left: 6px;
+}
+/* 眼睛以下部分 */
+.face {
+	background: #fff;
+	width: 106px;
+	height: 80px;
+	margin: auto;
+	border-radius: 50% 50% 30% 30% / 50% 50% 50% 50%;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+/* 鼻子 */
+.nose {
+	background: linear-gradient(45deg, rgb(200, 60, 10), #fff);
+	width: 16px;
+	height: 16px;
+	margin: auto;
+	top: 8px;
+	right: 0;
+	left: 0;
+	border-radius: 50%;
+}
+/* 胡子 */
+.whiskers {
+	background: #000;
+	width: 30px;
+	height: 1px;
+	border: 0;
+}
+
+.whiskers-left {
+	left: 8px;
+}
+
+.whiskers-right {
+	right: 8px;
+}
+
+.whiskers-top {
+	top: 30px;
+}
+
+.whiskers-center {
+	top: 34px;
+}
+
+.whiskers-bottom {
+	top: 38px;
+}
+
+.whiskers-left.whiskers-top {
+	transform-origin: center right;
+	transform: rotate(20deg);
+}
+
+.whiskers-right.whiskers-top {
+	transform-origin: center left;
+	transform: rotate(-20deg);
+}
+
+.whiskers-left.whiskers-bottom {
+	transform-origin: center right;
+	transform: rotate(-20deg);
+}
+
+.whiskers-right.whiskers-bottom {
+	transform-origin: center left;
+	transform: rotate(20deg);
+}
+/* 人中 */
+/*.philtrum {
+	background: #000;
+	width: 36px;
+	height: 2px;
+	border: 0;
+	transform: rotate(90deg);
+	top: 42px;
+	right: 0;
+	left: 0;
+	margin: auto;
+}*/
+
+.philtrum {
+	background: #000;
+	width: 1px;
+	height: 36px;
+	border: 0;
+	top: 26px;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+/* 嘴 */
+.mouth {
+	width: 60px;
+	height: 16px;
+	margin: auto;
+	border: 0;
+	border-bottom: 2px solid #000;
+	border-radius: 50%;
+	right: 0;
+	left: 0;
+	bottom: 18px;
+}
+/* 脖子 */
+.neck {
+	background: linear-gradient(90deg, #800, #b30, #b20, #a32);
+	width: 100px;
+	height: 10px;
+	margin: auto;
+	border-radius: 8% / 40%;
+	top: 115px;
+	right: 0;
+	left: 0;
+	z-index: 1;
+}
+/* 铃铛 */
+.bell {
+	background: #ff0;
+	width: 20px;
+	height: 20px;
+	margin: auto;
+	border-radius: 50%;
+	top: 30%;
+	right: 0;
+	left: 0;
+}
+
+.bell-top {
+	width: inherit;
+	height: 30%;
+	border: 0;
+	border-bottom: 1px solid #000;
+} 
+
+.bell-bottom {
+	width: inherit;
+	height: 70%;
+	border: 0;
+	bottom: 0;
+}
+
+.bell-hole {
+	background: #000;
+	width: 6px;
+	height: 6px;
+	margin: auto;
+	border: 0;
+	border-radius: 50%;
+	top: 15%;
+	right: 0;
+	left: 0;
+}
+
+.bell-line {
+	background: #000;
+	width: 2px;
+	height: 10px;
+	margin: auto;
+	border: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+/* 身体 */
+.main-body {
+	background: linear-gradient(60deg, #08a, #0be);
+	width: 96px;
+	height: 70px;
+	margin: auto;
+	top: 122px;
+	right: 0;
+	left: 0;
+}
+/* 胯下 */
+.main-body::after {
+	content: "";
+	background: #fff;
+	width: 8px;
+	height: 8px;
+	margin: auto;
+	border: 1px solid #000;
+	border-bottom: 0;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: -4px;
+}
+
+.oxter {
+	width: 1px;
+	height: 22px;
+	border: 0;
+	top: 2px;
+}
+
+.oxter-1 {
+	background: #08a;
+	left: -1px;
+}
+
+.oxter-2 {
+	background: #0bd;
+	right: -1px;
+}
+
+/* 肚皮 */
+.belly {
+	background: #fff;
+	width: 70px;
+	height: 60px;
+	border-radius: 30% 30% 50% 50% / 50% 50% 50% 50%;
+	margin: auto;
+	right: 0;
+	left: 0;
+}
+/* 口袋 */
+.pocket {
+	width: 60px;
+	height: 26px;
+	margin: auto;
+	border-radius: 0% 0% 100% 100% / 0% 0% 200% 200%;
+	right: 0;
+	left: 0;
+	bottom: 4px;
+}
+
+.arm {
+	width: 30px;
+	height: 20px;
+	top: 2px;
+	z-index: -1;
+}
+
+.arm-1 {
+	background: linear-gradient(#18a, #08a);
+	left: -28%;
+	transform-origin: center right;
+	transform: rotate(-30deg);
+}
+
+.arm-2 {
+	background: linear-gradient(#0bd, #0be);
+	right: -28%;
+	transform-origin: center left;
+	transform: rotate(30deg);
+}
+
+.hand {
+	background: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	top: -40%;
+}
+
+.arm-1 .hand {
+	left: -50%;
+}
+
+.arm-2 .hand {
+	right: -50%;
+}
+
+.foot {
+	background: linear-gradient(90deg, #ccc, #fff 15%);
+	width: 50px;
+	height: 10px;
+	border-radius: 8% / 50%;
+	top: 192px;
+}
+
+.foot-1 {
+	left: 48px;
+}
+
+.foot-2 {
+	right: 48px
+}
